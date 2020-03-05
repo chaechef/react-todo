@@ -32,6 +32,20 @@ module.exports = {
           'sass-loader' // compiles Sass to CSS, using Node Sass by default
         ],
         exclude: /node_modules/
+      },
+      {
+        // write image files under 10k to inline or copy image files over 10k
+        test: /\.(jpg|jpeg|gif|png|svg|ico)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              fallback: 'file-loader',
+              name: 'images/[name].[ext]'
+            }
+          }
+        ]
       }
     ]
   },
