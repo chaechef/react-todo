@@ -4,3 +4,16 @@ html body {
   height: 100%;
   color: white;
 }
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(211, 211, 211);
+  text-decoration: none;
+}
