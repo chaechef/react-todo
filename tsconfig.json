@@ -23,5 +23,5 @@
     "src/setupTests.ts",
     "./node_modules/**/*"
   ],
-  "include": ["./**/*", "@type", "index.tsx"]
+  "include": ["./src/**/*", "@type", "./index.tsx"]
 }

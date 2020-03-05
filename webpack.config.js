@@ -33,6 +33,6 @@ module.exports = {
     new ForkTsCheckerWebpackPlugin({ silent: true })
   ],
   resolve: {
-    extensions: [".js", ".jsx", ".ts", "tsx"]
+    extensions: [".js", ".jsx", ".ts", ".tsx"]
   }
 };
