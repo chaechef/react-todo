@@ -12,7 +12,9 @@ function Header({}: HeaderProps) {
         <img src={menu} alt="menu" />
       </div>
       <div className="logo">
-        <img src={logo} alt="logo" />
+        <a href="/">
+          <img src={logo} alt="logo"></img>
+        </a>
       </div>
       <div className="nav">
         <a href="/">Make</a>

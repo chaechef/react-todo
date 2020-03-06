@@ -16,6 +16,10 @@
     align-items: center;
     justify-content: center;
     margin-left: 20px;
+    a {
+      display: inline-block;
+      display: flex;
+    }
     img {
       color: white;
     }
@@ -39,17 +43,8 @@
   }
 }
 
-@media only screen and (max-device-width: 1900px) {
-  .header {
-    .menu {
-      display: none;
-    }
-    .nav {
-      display: flex;
-    }
-  }
-}
-@media only screen and (max-device-width: 1024px) {
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
   .header {
     .menu {
       display: flex;
@@ -60,13 +55,50 @@
   }
 }
 
-@media only screen and (max-device-width: 480px) {
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
   .header {
     .menu {
       display: flex;
     }
     .nav {
       display: none;
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .header {
+    .menu {
+      display: none;
+    }
+    .nav {
+      display: flex;
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .header {
+    .menu {
+      display: none;
+    }
+    .nav {
+      display: flex;
+    }
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .header {
+    .menu {
+      display: none;
+    }
+    .nav {
+      display: flex;
     }
   }
 }
